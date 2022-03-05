@@ -1,22 +1,22 @@
 .header {
-    padding-top: 20px;
+  padding-top: 20px;
 
-    .header__wrap {
-        display: flex;
-        flex-direction: column;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
 
-        .header__top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-            .top__nav {
-                &__list {
-                    display: flex;
-                    align-items: center;
-                    column-gap: 50px;
-                }
-            }
-        }
+  .top-nav {
+    &__list {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
     }
+  }
 }
