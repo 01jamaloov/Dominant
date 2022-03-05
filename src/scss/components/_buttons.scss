@@ -1,0 +1,16 @@
+.primary__btn {
+  font-family: "Manrope", sans-serif;
+  font-size: 12.4667px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  background-color: $primary;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  transition: 0.4s ease-in-out;
+}
+.primary__btn:hover {
+  background-color: $primary-hover;
+}

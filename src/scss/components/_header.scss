@@ -1,15 +1,18 @@
 .header {
-    padding-top: 20px;
+  padding-top: 20px;
 
-    .header__wrap {
-        display: flex;
-        flex-direction: column;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
 
-        .header__top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+<<<<<<< HEAD
             .top__nav {
                 &__list {
                     display: flex;
@@ -18,5 +21,13 @@
                 }
             }
         }
+=======
+  .top-nav {
+    &__list {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+>>>>>>> a03fb01313c96ef770bcb4f8cea9d94b695d3469
     }
+  }
 }
