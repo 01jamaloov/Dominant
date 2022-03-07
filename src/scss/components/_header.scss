@@ -78,7 +78,7 @@
 
             &__item {
                 position: relative;
-                
+
                 &:hover .bottom-nav__dropdown {
                     visibility: visible;
                     opacity: 1;
@@ -124,8 +124,8 @@
                 top: 25px;
                 min-width: 375px;
                 // background: rgba(255, 255, 255, 0.95);
-                background: red;
                 backdrop-filter: blur(25px);
+                background: red;
                 border-radius: 8px;
                 padding: 32px 0 70px 26px;
                 visibility: hidden;
@@ -138,6 +138,83 @@
 
             &__dropdown__link {
                 white-space: nowrap;
+            }
+        }
+    }
+
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        align-items: center;
+
+        &_content,
+        &_image {
+            width: 100%;
+        }
+
+        &_title {
+            font-size: 46px;
+            font-weight: 800;
+            color: $black;
+            line-height: calc(60 / 46 * 100%);
+            margin: 15px 0 42px;
+        }
+
+        &_subtitle {
+            font-size: 24px;
+            color: $gray;
+            font-weight: 500;
+            line-height: calc(31 / 24 * 100%);
+            margin-bottom: 100px;
+            position: relative;
+        }
+        
+        .arrow-2{
+            position: absolute;
+            left: 25%;
+            top: 64%;
+            
+            path{
+                color: #dedede;
+            }
+        }
+
+        &_btns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            max-width: 447px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: calc(48 / 20 * 100%);
+            letter-spacing: 2%;
+            white-space: nowrap;
+        }
+
+        &_btn1 {
+            padding: 20px 36px;
+            background-color: $primary;
+            color: #fff;
+            border-radius: 10px;
+            transition: 0.3s;
+            
+            &:hover{
+                background-color: $primary-hover;
+            }
+        }
+
+        &_btn2 {
+            padding: 20px 36px;
+            background: none;
+            border: 2px solid $primary;
+            color: #000;
+            border-radius: 10px;
+            transition: 0.3s;
+            
+            &:hover{
+                background-color: $primary;
+                color: #fff;
             }
         }
     }

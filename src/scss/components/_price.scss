@@ -1,0 +1,66 @@
+.price-content {
+    background-color: #fff;
+    padding: 30px 52px;
+    border-radius: 8px;
+
+    &_wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        margin-top: 57px;
+    }
+
+    &_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 23px;
+        background: none;
+    }
+
+    &_item--selected {
+        background-color: $card;
+        border-radius: 15px;
+    }
+
+    &_title {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: calc(21 / 15 * 100%);
+        width: 40%;
+    }
+
+    &_price {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: calc(28 / 20 * 100%);
+        color: $primary;
+    }
+
+    &_btn {
+        padding: 9px 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24 / 14 * 100%;
+        border-radius: 6px;
+        background: none;
+        border: 2px solid $primary;
+        color: $gray-dark;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+
+    &_item--selected>button {
+        background-color: $primary;
+        color: #fff;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $primary-hover;
+        }
+    }
+}
