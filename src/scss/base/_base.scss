@@ -54,13 +54,22 @@ svg {
   box-sizing: content-box;
 }
 
-.section-title {
+.section_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.title {
   font-weight: 800;
   font-size: 46px;
   line-height: calc(60 / 46 * 100%);
   color: $black;
   margin: 0;
 }
+
 
 @media (min-width: 576px) {
   .container {

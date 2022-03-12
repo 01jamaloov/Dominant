@@ -1,6 +1,6 @@
 .price-content {
     background-color: #fff;
-    padding: 30px 52px;
+    padding: 30px 0 52px;
     border-radius: 8px;
 
     &_wrap {
@@ -41,7 +41,7 @@
         padding: 9px 16px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 24 / 14 * 100%;
+        line-height: calc(24 / 14 * 100%);
         border-radius: 6px;
         background: none;
         border: 2px solid $primary;
@@ -51,16 +51,6 @@
         &:hover {
             background-color: $primary;
             color: #fff;
-        }
-    }
-
-    &_item--selected>button {
-        background-color: $primary;
-        color: #fff;
-        font-weight: 600;
-
-        &:hover {
-            background-color: $primary-hover;
         }
     }
 }
